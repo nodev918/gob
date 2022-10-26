@@ -1,4 +1,7 @@
 # gob
+enviroment:
+win10 
+
 usage 
 ```
 $ go run . myproj

@@ -15,7 +15,7 @@ type Scanner struct {
 
 func NewScanner(fileName string) *Scanner {
 	s := new(Scanner)
-
+	// p, _ := filepath.Abs("/" + fileName)
 	bdata, err := os.ReadFile(fileName)
 	yutil.Checke(err)
 

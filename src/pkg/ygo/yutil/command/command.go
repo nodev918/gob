@@ -22,6 +22,8 @@ func (y *Yexec) Exec(cmda string, cmdb string) {
 }
 
 func (y *Yexec) ExecObj(objArr []map[string]string) {
+	yutil.Logg("projname: " + y.projName)
+	// y.projName = "hhh"
 	y.Exec("mkdir", y.projName)
 	for _, obj := range objArr {
 		if obj["type"] == "file" {

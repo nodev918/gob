@@ -1,6 +1,12 @@
-test: Makefile
+install-win: gob.exe config.json
+	mkdir -p $(USERPROFILE)\myprogram\gob\bin
+	cp gob.exe config.json $(USERPROFILE)\myprogram\gob\bin
+
+test: gob.exe
+	.\gob.exe myproj 
+
+gob.exe: main.go
 	go build .
-	mkdir -p test
-	cp ./gob.exe test
-	cp ./config.json test
-	./test/gob.exe -f config.json
+
+echo:
+	echo $(USERPROFILE)
