@@ -4,8 +4,6 @@ win10
 
 usage 
 ```
-$ go run . myproj
-或是
-$ go buid .
-$ ./gob myproj
-```
+$ git clone https://github.com/nodev918/gob
+$ go build .
+$ .\gob.exe myproj 
